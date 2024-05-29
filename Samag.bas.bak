@@ -1,7 +1,6 @@
 Attribute VB_Name = "Samag"
 Dim rgGuias As Range, rgToolsSamag As Range
 Dim opIndex As Integer, lbl As Integer, guia As Integer
-'linha adicionada
 
 Sub SamagInitialize()
   Set rgGuias = [nmGuias]
@@ -18,7 +17,8 @@ Dim avOpName As Variant, avOpShortName As Variant
 If fnValidaDados(2) = False Then Exit Sub
 
 Set rgGuias = [nmGuias]
-'apagada linha seguinte
+'Exit se células vazias na tabela de guias
+
 
 Set rgToolsSamag = [toolsSamag]
 
